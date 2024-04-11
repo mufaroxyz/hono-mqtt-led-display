@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: var(--sidebar-bg-color);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-hover);
+  width: 95%;
+  margin: 1rem auto;
+}
+
+.navigation-link {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.navigation-active {
+  color: var(--accent-color);
+  background-color: var(--accent-low-opacity);
+  border-radius: 0.5rem;
+}

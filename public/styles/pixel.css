@@ -1,0 +1,41 @@
+:root {
+  --_columb-round: 0.5rem;
+}
+
+.canvas {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &:first-child {
+    border-top-left-radius: var(--_columb-round);
+    border-bottom-left-radius: var(--_columb-round);
+  }
+
+  &:last-child {
+    border-top-right-radius: var(--_columb-round);
+    border-bottom-right-radius: var(--_columb-round);
+  }
+}
+
+.cell {
+  background-color: var(--component-base);
+  border: var(--input-hover) 1px solid;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+
+  .active {
+    background-color: silver;
+  }
+}
